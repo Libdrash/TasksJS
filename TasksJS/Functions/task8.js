@@ -1,6 +1,6 @@
 const reverseArray = ["сыр", "хлеб", "чай"]
 
-function showValueReverse(arr) {
+const showValueReverse = (arr) => {
   return arr.reverse()
 }
 console.log(showValueReverse(reverseArray))

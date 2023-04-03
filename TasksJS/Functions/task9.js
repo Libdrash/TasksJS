@@ -4,7 +4,7 @@
 // }
 // console.log(deleteValue(["красный", "желтый", "зеленый", "синий"], "желтый"))
 
-function deleteValue(arr, del) {
+const deleteValue = (arr, del) => {
   let result = arr.filter((item) => item !== del)
   return result
 }

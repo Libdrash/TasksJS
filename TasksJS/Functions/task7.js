@@ -1,4 +1,4 @@
-function phoneRepair(phone, tool = "утюг") {
+const phoneRepair = (phone, tool = "утюг") => {
   let result
   return (result = `'При разборе телефона ${phone} использовался инструмент - ${tool}`)
 }

@@ -7,7 +7,7 @@
 // }
 // console.log(sum(4, 5, 6))
 
-function sumAll(...all) {
+const sumAll = (...all) => {
   let result = 0
   for (let num of all) {
     result += num

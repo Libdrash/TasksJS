@@ -1,4 +1,4 @@
-function getEvenNumber(arr) {
+const getEvenNumber = (arr) => {
   let result = arr.filter((item) => item % 2 === 0)
   return result
 }

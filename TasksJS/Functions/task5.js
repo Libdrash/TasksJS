@@ -1,4 +1,4 @@
-let sayHi = (str) => {
+const sayHi = (str) => {
   if (typeof str === "string") {
     return str
   } else if (typeof str === "number") {

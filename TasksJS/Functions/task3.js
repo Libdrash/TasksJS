@@ -1,4 +1,4 @@
-function getHundred() {
+const getHundred = () => {
   const value = 100
   return value
 }
