@@ -32,9 +32,10 @@ const propEq = (key, value) => {
 }
 const getOr = (findOptions, str, user) => {
   const userAvatar = user[findOptions[0]]
+
   if (userAvatar[findOptions[1]]) {
-    return userAvatar.alt
-  } else if (userAvatar.alt == undefined) {
+    return userAvatar[findOptions[1]]
+  } else if (userAvatar.alt === undefined) {
     return userAvatar.alt
   } else {
     return str
