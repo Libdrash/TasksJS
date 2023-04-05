@@ -32,15 +32,13 @@ const propEq = (key, value) => {
 }
 const getOr = (findOptions, str, user) => {
   const userAvatar = user[findOptions[0]]
-
-  if (userAvatar[findOptions[1]]) {
+  if (findOptions[1] in userAvatar) {
     return userAvatar[findOptions[1]]
-  } else if (userAvatar.alt === undefined) {
-    return userAvatar.alt
   } else {
     return str
   }
 }
+
 const names = arr.map(get("name"))
 console.log(names)
 
